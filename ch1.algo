@@ -1,0 +1,35 @@
+ALGORITHM algorithm_phrase
+VAR
+ch:chaine de caracteres;
+c:caractere:
+i,m,n,ph:entier;
+
+BEGIN
+    ecrire une phrase;
+    lire "ch";
+   i=0;
+    repeter i=i+c;
+    jusquà ch=i+"."
+END
+def compteMots(ph):
+    "fonction qui compte le nombre de mots dans la phrase ph"
+    nbMots = 1
+    i = 0
+    while i < len(ph):
+        if ph[i] == " " and ph != "":
+            nbMots = nbMots + 1
+        elif ph == "":
+            nbMots = 0
+        i = i + 1
+    return nbMots
+ALGORITHM voyelles
+fonction nbrvoyelles(texte:chaine de caracteres):entier
+variables
+i,nbr:entier
+debut
+nbr=0
+pour i=0 a longueur(texte-1)
+si texte[i]='a'ou si texte[i]='e'ou si texte[i]='u'ou si texte[i]='y'ousi texte[i]='o'ou
+nbr=nbr+1;
+fin si 
+fin pour
